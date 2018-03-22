@@ -50,13 +50,11 @@ How to use?
 - assuming all modules from cpanfile are installed in UMS directory,in UMS directory run 'carton exec plackup -p 8090 bin/app.psgi' and you should see UMS app coming up
 - assuming all modules from cpanfile are installed,in TMS directory run 'carton exec plackup -p 8091 bin/app.psgi' and you should see TMS app coming up
 
+Wish you good luck!
+
 Contact:
-
-
-
-Wish you good luck
-Ramakrishnan & Sunitha
-hosa.thilivu@gmail.com
+ramki
+ramki.pvrs@gmail.com
 
 Some more links refered:
 http://search.cpan.org/dist/HTML-FormHandler-0.40057/lib/HTML/FormHandler/Field/Select.pm

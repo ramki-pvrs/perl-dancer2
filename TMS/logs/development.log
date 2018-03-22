@@ -1,0 +1,359 @@
+[LOGDATE::18/Mar/2018 10:59:46--LOGLEVEL::core--MESSAGE::looking for get /newuser--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 10:59:46--LOGLEVEL::core--MESSAGE::Entering hook core.error.init--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:46--LOGLEVEL::core--MESSAGE::Entering hook core.error.before--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:46--LOGLEVEL::core--MESSAGE::Entering hook core.error.after--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:50--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 10:59:50--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:50--LOGLEVEL::debug--MESSAGE::1--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 10:59:50--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::core--MESSAGE::looking for post /--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::debug--MESSAGE::1--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::debug--MESSAGE::2--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/TMS/bin/../lib/TMS.pm--LINENUMBER::28]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/TMS/bin/../lib/TMS.pm--LINENUMBER::28]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::debug--MESSAGE::3--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::debug--MESSAGE::successful post of login params--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => '9005'},'expires' => 1521437393,'id' => 'Wq35UQAAIqXRJj7Wnmd-jA8Qdm4MiEo3','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::core--MESSAGE::looking for get /menu--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:53--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:58--LOGLEVEL::core--MESSAGE::looking for get /newtestcase--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 10:59:58--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:59:58--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:00:01--LOGLEVEL::core--MESSAGE::looking for post /get_rls--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:00:01--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:00:01--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:00:03--LOGLEVEL::core--MESSAGE::looking for post /get_features--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:00:03--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:00:03--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:00:12--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:00:12--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:00:12--LOGLEVEL::debug--MESSAGE::1--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 11:00:12--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::core--MESSAGE::looking for post /--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::debug--MESSAGE::1--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::debug--MESSAGE::2--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/TMS/bin/../lib/TMS.pm--LINENUMBER::28]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/TMS/bin/../lib/TMS.pm--LINENUMBER::28]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::debug--MESSAGE::3--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::debug--MESSAGE::successful post of login params--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => '9005'},'expires' => 1521438881,'id' => 'Wq3_IQAAItJWaQnYnuu1nvT6dzQ2NB4W','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::core--MESSAGE::looking for get /menu--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:41--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:45--LOGLEVEL::core--MESSAGE::looking for get /newtestcase--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:24:45--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:45--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:50--LOGLEVEL::core--MESSAGE::looking for post /get_rls--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:24:50--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:50--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:51--LOGLEVEL::core--MESSAGE::looking for post /get_features--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:24:51--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:24:51--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:25:05--LOGLEVEL::core--MESSAGE::looking for post /newtestcase--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 11:25:05--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 11:25:05--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:45--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 14:12:45--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:45--LOGLEVEL::debug--MESSAGE::1--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 14:12:45--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::core--MESSAGE::looking for post /--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::debug--MESSAGE::1--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::debug--MESSAGE::2--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/TMS/bin/../lib/TMS.pm--LINENUMBER::28]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/TMS/bin/../lib/TMS.pm--LINENUMBER::28]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::debug--MESSAGE::3--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::debug--MESSAGE::successful post of login params--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'dpd_53215474' => {'success' => 'succesful added new testcase with following id6'},'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => '9005'},'expires' => 1521448967,'id' => 'Wq4mhwAAKDsGPhdcWJPaz3XEmhlttooh','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::core--MESSAGE::looking for get /menu--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:47--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:50--LOGLEVEL::core--MESSAGE::looking for get /newtestcase--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 14:12:50--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:50--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:52--LOGLEVEL::core--MESSAGE::looking for post /get_rls--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 14:12:52--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 14:12:52--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:36--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::20/Mar/2018 18:53:36--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:36--LOGLEVEL::debug--MESSAGE::1--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1590]
+
+
+[LOGDATE::20/Mar/2018 18:53:36--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:38--LOGLEVEL::core--MESSAGE::looking for post /--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::20/Mar/2018 18:53:38--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:38--LOGLEVEL::debug--MESSAGE::1--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1590]
+
+
+[LOGDATE::20/Mar/2018 18:53:38--LOGLEVEL::debug--MESSAGE::2--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1590]
+
+
+[LOGDATE::20/Mar/2018 18:53:39--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:39--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/TMS/bin/../lib/TMS.pm--LINENUMBER::28]
+
+
+[LOGDATE::20/Mar/2018 18:53:39--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/TMS/bin/../lib/TMS.pm--LINENUMBER::28]
+
+
+[LOGDATE::20/Mar/2018 18:53:39--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:39--LOGLEVEL::debug--MESSAGE::3--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1590]
+
+
+[LOGDATE::20/Mar/2018 18:53:39--LOGLEVEL::debug--MESSAGE::successful post of login params--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1590]
+
+
+[LOGDATE::20/Mar/2018 18:53:39--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => 9005},'expires' => 1521638619,'id' => 'WrELWwAAFIg51epI35BcmwkaWMVEtQPP','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1590]
+
+
+[LOGDATE::20/Mar/2018 18:53:39--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:44--LOGLEVEL::core--MESSAGE::looking for get /menu--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::20/Mar/2018 18:53:44--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:44--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:46--LOGLEVEL::core--MESSAGE::looking for get /newtestcase--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::20/Mar/2018 18:53:46--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:47--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:49--LOGLEVEL::core--MESSAGE::looking for post /get_rls--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::20/Mar/2018 18:53:49--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:49--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:50--LOGLEVEL::core--MESSAGE::looking for post /get_features--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::20/Mar/2018 18:53:50--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:53:50--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:54:32--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::20/Mar/2018 18:54:32--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 222)--LINENUMBER::1]
+
+
+[LOGDATE::20/Mar/2018 18:54:32--LOGLEVEL::debug--MESSAGE::1--FILENAME::/home/opensips/perl_tut/dancer2/TMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1590]
+
+
+[LOGDATE::20/Mar/2018 18:54:32--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 222)--LINENUMBER::1]
+

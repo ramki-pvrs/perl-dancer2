@@ -1,0 +1,65 @@
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.pname FROM products me ORDER BY pname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me ORDER BY rls_num: 
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me ORDER BY fname: 
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.pname FROM products me ORDER BY pname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me ORDER BY rls_num: 
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me ORDER BY fname: 
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.pname FROM products me ORDER BY pname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me ORDER BY rls_num: 
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me ORDER BY fname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me WHERE ( prod_id = ? ) ORDER BY rls_num: '1'
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me WHERE ( prod_rls_id = ? ) ORDER BY fname: '1'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.pname FROM products me ORDER BY pname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me ORDER BY rls_num: 
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me ORDER BY fname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me WHERE ( prod_id = ? ) ORDER BY rls_num: '1'
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me WHERE ( prod_rls_id = ? ) ORDER BY fname: '1'
+SELECT me.id, me.pname FROM products me ORDER BY pname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me ORDER BY rls_num: 
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me ORDER BY fname: 
+SELECT me.id, me.pname FROM products me ORDER BY pname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me ORDER BY rls_num: 
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me ORDER BY fname: 
+BEGIN WORK
+INSERT INTO testcases ( author_id, automate, description, exec_steps, expected_result, feat_id, script_path, setup, title) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ): '9005', '1', 'some descrtesiption', 'some steps', 'some result', '6', 'some path', 'some setup', 'test'
+SELECT me.id, me.feat_id, me.title, me.description, me.setup, me.exec_steps, me.expected_result, me.automate, me.automt_sts, me.script_path, me.status, me.author_id, me.created, me.updated FROM testcases me WHERE ( me.id = ? ): '6'
+SELECT me.id, me.feat_id, me.title, me.description, me.setup, me.exec_steps, me.expected_result, me.automate, me.automt_sts, me.script_path, me.status, me.author_id, me.created, me.updated FROM testcases me WHERE ( me.id = ? ): '6'
+COMMIT
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.pname FROM products me ORDER BY pname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me ORDER BY rls_num: 
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me ORDER BY fname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me WHERE ( prod_id = ? ) ORDER BY rls_num: '1'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( me.username = ? ): 'eeee'
+SELECT me.id, me.username, me.email, me.mobilenumber, me.firstname, me.lastname, me.password, me.manager_id, me.created_at, me.updated_at, me.status, me.canlogin, me.lastlogin, me.pw_changed, me.pw_reset_code FROM users me WHERE ( ( canlogin = ? AND me.username = ? ) ): '1', 'eeee'
+SELECT me.id, me.pname FROM products me ORDER BY pname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me ORDER BY rls_num: 
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me ORDER BY fname: 
+SELECT me.id, me.prod_id, me.rls_num, me.rls_name, me.rls_type, me.remarks FROM product_rls me WHERE ( prod_id = ? ) ORDER BY rls_num: '1'
+SELECT me.id, me.fname, me.prod_rls_id, me.fg_id FROM features me WHERE ( prod_rls_id = ? ) ORDER BY fname: '1'

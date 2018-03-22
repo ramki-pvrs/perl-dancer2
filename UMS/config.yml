@@ -1,0 +1,204 @@
+# This is the main configuration file of your Dancer2 app
+# env-related settings should go to environments/$env.yml
+# all the settings in this file will be loaded at Dancer's startup.
+
+# Your application's name
+appname: "UMS"
+
+environment: "development"
+
+# The default layout to use for your application (located in
+# views/layouts/main.tt)
+layout: "main"
+
+# when the charset is set to UTF-8 Dancer2 will handle for you
+# all the magic of encoding and decoding. You should not care
+# about unicode within your app when this setting is set (recommended).
+#charset: "UTF-8"
+
+#http://search.cpan.org/~cromedome/Dancer2-0.204001/lib/Dancer2/Core/Role/Logger.pm
+# http://stackoverflow.com/questions/37865376/how-can-i-set-the-log-format-in-dancer2
+engines:
+  session:
+    Redis:
+      #Browser cookie key for session id.
+      cookie_name: redis_users.session
+      #Browser cookie expiration timeout (since last visit).
+      cookie_duration: 86400
+      #Redis session expiration timeout (since last visit).
+      session_duration: 864000
+      #Browser only sends cookie over https connection when set to true.
+      is_secure: 0
+      #Browser do not pass session cookie to JavaScript when set to true.
+      is_http_only: 0
+      #if you use TCP/IP:
+      redis_server: 'localhost:6379'
+      #if you use UNIX/Linux sockets:
+      #redis_sock: "/path/to/sock"
+      #(optional) Redis password used with auth:
+      #redis_password: "redis123"
+      #(optional) Reconnect up to 60 seconds (reconnect) every 5000 milliseconds (every):
+      #redis_reconnect: 6000
+      #redis_every: 5000
+      #(optional) Redis connection name (NOT the Redis database ID):
+      #redis_name: "my_connection_name"
+      #(optional) Function called on Redis connect:
+      #redis_on_connect: "UMS::redis_on_connect"
+      #(optional) Use serialization for storing values other than simple scalars with Redis:
+      redis_serialization:
+        #Use Sereal as serialization module:
+       module: "Dancer2::Session::Redis::Serialization::Sereal"
+       #Serialization module configuration:
+       #Use snappy compression
+       compression: "snappy"
+    Memcached:
+      cookie_name: users_lcl.session
+      # is_secure for to work on https only
+      #is_secure: 1
+      # is_http_only to accept cookie from http conn only and not any others like ssh
+      is_http_only: 1
+      session_duration: 60
+      memcached_servers:
+        localhost:11211
+  template:
+    template_toolkit:
+      #ENCODING: utf8
+      # only lower case start_tag and end_tag works in 0.204004
+      start_tag: '[%'
+      end_tag:   '%]'
+  logger:
+    File:
+      log_dir: "/home/opensips/perl_tut/dancer2/UserMgmt/UMS/logs"
+      file_name: "development.log"
+      #https://metacpan.org/pod/Dancer2::Core::Role::Logger#log_format
+      # new line character and LOGDATE::, LOGLEVEL:: kind of text added by ramki
+      log_format: "\n[LOGDATE::%t--LOGLEVEL::%L--MESSAGE::%m--FILENAME::%f--LINENUMBER::%l]\n"
+  serializer:
+    json: JSON
+    yml:  YAML
+    dump: Dumper
+
+plugins:
+  DBIC:
+    users:
+      dsn: dbi:mysql:Users
+      schema_class: "UsersSchema"
+      user: opensips
+      password: opensips
+      options:
+        RaiseError: 1
+        PrintError: 1
+      log_queries: 1  
+
+  Auth::Extensible:
+    disable_roles: 0
+    login_without_redirect: 0
+    no_login_handler: 1
+    no_default_pages: 1
+    #record_lastlogin: 1
+    #login_page_handler: 'UMS::login'
+    #NOTE THAT DUE TO custom_login, THE  user/custom_login_template  DOES NOT HAVE A action ONLY method = post
+    # it is like this due to the note from 
+    # http://search.cpan.org/~hornburg/Dancer2-Plugin-Auth-Extensible/lib/Dancer2/Plugin/Auth/Extensible.pm
+    # CUSTOMISING /login AND /login/denied  section second part
+    login_page: 'custom_login'
+    logout_page: 'custom_logout'
+    #login_page_handler: 'UMS::login_page_handler'
+    #permission_denied_page_handler: 'UMS::permission_denied_page_handler'
+    #denied_page: 'user/permission_denied'
+    login_template: 'user/custom_login_template'
+    #denied_template: 'static_pages/home'
+    realms:
+      users:
+        #priority: 3
+        provider: 'DBIC'
+        # Optionally set the name of the DBIC schema
+        schema_name: 'users'
+
+        # Should get_user_details return an inflated DBIC row
+        # object? Defaults to false which will return a hashref
+        # inflated using DBIx::Class::ResultClass::HashRefInflator
+        # instead. This also affects what `logged_in_user` returns.
+
+        #ramki: if you want user roles to be checked during login, set user_as_object to 0
+        #ramki: my observation, set user_as_object to zero and it is also required to set roles_key to roles
+        user_as_object: 0
+
+        # Optionally specify the DBIC resultset names if you don't
+        # use the defaults (as shown). These and the column names are the
+        # only settings you might need. The relationships between
+        # these resultsets is automatically introspected by
+        # inspection of the schema.
+        users_resultset: 'User'
+        roles_resultset: 'Role'
+        user_roles_resultset: 'UserRole'
+
+        # optionally set the column names
+        users_username_column: 'username'
+        users_password_column: 'password'
+        roles_role_column: 'role'
+
+        # This plugin supports the DPAE record_lastlogin functionality.
+        # Optionally set the column name:
+        #record_lastlogin: 1
+        users_lastlogin_column: 'lastlogin'
+
+        # Optionally set columns for user_password functionality in
+        # Dancer2::Plugin::Auth::Extensible
+        #users_pwresetcode_column: pw_reset_code
+        #users_pwchanged_column:   # Time of reset column. No default.
+
+        # Days after which passwords expire. See logged_in_user_password_expired
+        # functionality in Dancer2::Plugin::Auth::Extensible
+        #password_expiry_days:   10    # No default
+
+        
+
+        # Optionally set additional conditions when searching for the
+        # user in the database. These are the same format as required
+        # by DBIC, and are passed directly to the DBIC resultset search
+        user_valid_conditions:
+            canlogin: 1
+            #account_request:
+               # "<": 1
+
+        # Optionally specify a key for the user's roles to be returned in.
+        # Roles will be returned as role_name => 1 hashref pairs
+        roles_key: roles
+
+        # Optionally specify the algorithm when encrypting new passwords
+        #encryption_algorithm: SHA-512
+
+        # Optional: To validate passwords using a method called
+        # 'check_password' in users_resultset result class
+        # which takes the password to check as a single argument:
+
+        #ramki: eventhough the User result set has check_password, we need here also for this realm to work
+        users_password_check: check_password
+        
+
+
+      # usergroup:
+      #   priority: 0
+      #   provider: 'Usergroup'
+      #   # optional schema name for DBIC (default 'default')
+      #   schema_name: 'users'
+      #   # optionally specify names of result sets if they're not the defaults
+      #   # (defaults are 'User' and 'Role')
+      #   user_rset: 'User'
+      #   user_role_rset: 'UserRolesView'
+      #   # optionally set the column names (see the SUGGESTED SCHEMA
+      #   # section below for the default names; if you use them, they'll
+      #   # Just Work)
+      #   user_login_name_column: 'username'
+      #   user_passphrase_column: 'password'
+      #   user_role_column: 'role'        
+      #   # optionally set a column name that makes a user useable
+      #   # (not all login names can be used to login)
+      #   user_activated_column: 'canlogin'
+      #   record_lastlogin: 1
+
+#session: Memcached
+session: Redis
+template: "template_toolkit"
+logger: "LogReport"

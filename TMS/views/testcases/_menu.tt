@@ -1,0 +1,85 @@
+<div class="panel panel-default">
+		<!-- <div class="panel-heading">
+			<h3>Navigation</h3>
+
+		</div> -->
+		<div id="sidebar" class="list-group"> 
+		<br>
+		<br>
+			<!-- <a href="#" class="list-group-item active">
+				<i class="icon-dashboard"></i> Dashboard
+			</a> -->
+			<strong style="font-size:16px">Test System Menu</strong>
+
+			<a href="#creates" class="list-group-item"  data-parent="#sidebar">
+				<i class="icon-group"></i> Add/Create
+				<!-- <span class="badge bg_danger">0</span> -->
+			</a>
+
+			<div id="creates" class="list-group subitem collapse">	
+				<a href="/newtestcase" class="list-group-item">
+					<i class="icon-caret-right"></i>Create New Testcase
+				</a>
+
+				<a href="#" class="list-group-item">
+					<i class="icon-caret-right"></i>Create Test Exec. Plan
+				</a>
+			</div>	
+
+			<a href="#edits" class="list-group-item"  data-parent="#sidebar">
+				<i class="icon-file-text"></i> Edit/Update
+				<!-- <span class="badge bg_danger">0</span> -->
+			</a>
+			<div id="edits" class="list-group subitem collapse">	
+				<a href="/select_testcase/toUpdate" class="list-group-item bg_warning">
+					<i class="icon-caret-right"></i> Edit Test Case
+					<!-- <span class="badge bg_danger">0</span> -->
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="icon-caret-right"></i> Edit Test Exec. Plan
+				</a>
+			</div>
+
+			<a href="#deletes" class="list-group-item"  data-parent="#sidebar">
+				<i class="icon-file-text"></i> Delete/Remove
+				<!-- <span class="badge bg_danger">0</span> -->
+			</a>
+
+			<div id="deletes" class="list-group subitem collapse">	
+				<a href="/select_testcase/toDelete" class="list-group-item bg_warning">
+					<i class="icon-caret-right"></i> Delete a Test Case
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="icon-caret-right"></i> Delete a Test Exec. Plan
+				</a>
+			</div>
+			<a href="#reports" class="list-group-item"  data-parent="#sidebar">
+				<i class="icon-file-text"></i> Show Reports
+				<!-- <span class="badge bg_danger">0</span> -->
+			</a>
+
+			<div id="reports" class="list-group subitem collapse">	
+				<a href="#" class="list-group-item bg_warning">
+					<i class="icon-caret-right"></i> Test Exec. Summary
+					<!-- <span class="badge bg_danger">0</span> -->
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="icon-caret-right"></i> Test Exec. Details
+				</a>
+			</div>
+			<a href="#executes" class="list-group-item"  data-parent="#sidebar">
+				<i class="icon-file-text"></i> Run Tests
+				<!-- <span class="badge bg_danger">0</span> -->
+			</a>
+
+			<div id="executes" class="list-group subitem collapse">	
+				<a href="#" class="list-group-item bg_warning">
+					<i class="icon-caret-right"></i> Execute a Test Plan
+					<!-- <span class="badge bg_danger">0</span> -->
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+		

@@ -1,0 +1,27 @@
+curl http://localhost:8090/RESTUMS
+
+
+curl -X POST -H "Content-Type: application/json" -d '{"firstname":"oooo","lastname":"oo","username":"oooo","email":"oooo@y.com","mobilenumber":"2121212121","password":"oooo1234","password_confirmation":"oooo1234"}' http://localhost:8090/RESTUMS/newuser
+
+
+curl -X POST  -d '{"firstname":"oooo","lastname":"oo","username":"oooo","email":"oooo@y.com","mobilenumber":"2121212121","password":"oooo1234","password_confirmation":"oooo1234"}' http://localhost:8090/RESTUMS/newuser
+
+curl -X POST  -d '{"firstname":"oooo","lastname":"oo","username":"oooo","email":"oooo@y.com","mobilenumber":"2121212121","password":"oooo1234"}' http://localhost:8090/RESTUMS/newuser
+
+curl -X POST  -d '{"firstname":"vvvv","lastname":"oo","username":"vvvv","email":"vvvv@y.com","mobilenumber":"2121212121","password":"vvvv1234"}' http://localhost:8090/RESTUMS/newuser
+
+curl -X POST  -d '{"firstname":"xxxx","lastname":"oo","username":"xxxx","email":"xxxx@y.com","mobilenumber":"2121212121","password":"xxxx1234"}' http://localhost:8090/RESTUMS/newuser
+
+curl -X POST  -d '{"firstname":"aaaa","lastname":"oo","username":"aaaa","email":"aaaa@y.com","mobilenumber":"2121212121","password":"aaaa1234"}' http://localhost:8090/RESTUMS/newuser
+
+curl -X POST  -d '{"firstname":"bbbb","lastname":"oo","username":"bbbb","email":"bbbb@y.com","mobilenumber":"2121212121","password":"bbbb1234"}' http://localhost:8090/RESTUMS/newuser
+
+
+curl -X POST  -d '{"email":"nnnn@y.com","password":"nnnn1234"}' http://localhost:8090/RESTUMS/custom_login
+
+curl -d '{"email":"nnnn@y.com","password":"nnnn1234"}' -X POST   http://localhost:8090/RESTUMS/custom_login
+
+
+
+
+

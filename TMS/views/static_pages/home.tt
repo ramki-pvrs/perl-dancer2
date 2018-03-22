@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1>Welcome to Test Management System</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well login-box">
+                <form method="post" action="/">
+                    <legend>Login</legend>
+                    <div class="form-group">
+                        <label for="session_username">Username</label>
+                        <input value='eeee' placeholder="Username" type="text" class="form-control" id="session_username" name="session.username"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="session_password">Password</label>
+                        <input value='eeee1234' placeholder="Password" type="password" class="form-control" id="session_password" name="session.password" />
+                    </div>
+                    <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary btn-lg" name="commit">Log in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>  

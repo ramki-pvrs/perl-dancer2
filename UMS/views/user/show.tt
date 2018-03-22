@@ -1,0 +1,6 @@
+[% vars.title = user.username %]
+[% USE Gravatar(size => 50) %]
+<h1>
+<img class="gravatar" src="[% Gravatar(email => user.email) | html %]" alt="[% user.username | html %]">
+<small>[% user.firstname | html %] [% user.lastname %]<small>
+</h1>

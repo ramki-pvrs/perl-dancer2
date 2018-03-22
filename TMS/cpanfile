@@ -1,0 +1,49 @@
+requires "Dancer2" => "0.205002";
+requires "Dancer2::Plugin::Deferred";
+requires "Dancer2::Plugin::DBIC";
+requires "Dancer2::Plugin";
+requires "Data::Dumper";
+requires "DBD::SQLite";
+requires "DBD::mysql";
+requires "Template";
+requires "Template::Plugin::Gravatar";
+requires "HTML::FormHandler";
+requires "HTML::FormHandler::Moose";
+requires "HTML::FormHandler::Model::DBIC";
+requires "Log::Report::DBIC::Profiler";
+requires "Dancer2::Plugin::Auth::Extensible";
+requires "Dancer2::Plugin::Auth::Extensible::Provider::Usergroup";
+requires "Dancer2::Plugin::Auth::Extensible::Provider::DBIC";
+requires "DBIx::Class::PassphraseColumn";
+requires "DBIx::Class::QueryLog";
+requires "Sereal::Encoder";
+requires "Sereal::Decoder";
+requires "Dancer2::Session::Redis";
+requires "Dancer2::Session::Redis::Serialization::Sereal";
+requires "Dancer2::Template::TemplateToolkit";
+requires "Dancer2::Core::Hook";
+requires "YAML";
+requires "Log::Log4perl";
+requires "Dancer2::Plugin::LogReport";
+requires "Dancer2::Logger::LogReport";
+requires "Plack::Runner";
+requires "Plack::Handler::Apache2";
+requires "local::lib";
+requires "FindBin::libs";
+requires "Dancer2::Plugin::REST";
+requires "Dancer2::Serializer::JSON";
+requires "utf8";
+requires "DBIx::Class::Schema::Loader";
+requires "Dancer2::Plugin::Ajax";
+
+
+
+recommends "YAML::XS"         => "0";
+recommends "URL::Encode::XS"  => "0";
+recommends "CGI::Deurl::XS"   => "0";
+recommends "HTTP::Parser::XS" => "0";
+
+on "test" => sub {
+    requires "Test::More"            => "0";
+    requires "HTTP::Request::Common" => "0";
+};

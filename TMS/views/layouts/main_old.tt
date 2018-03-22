@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="[% settings.charset %]">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>TMS</title>
+  <link rel="stylesheet" type="text/css"  href="[% request.uri_base %]/bootstrap40/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"  href="[% request.uri_base %]/css/style.css">
+  <style type="text/css">
+		div.subitem a.list-group-item {
+    		padding-left: 30px;
+		}
+	</style>
+  
+	<style type="text/css">
+		body {
+		  font-family: sans-serif; /* font stack inherited by all child elements */ 
+		  font-size: 100%; /* sets default size inherited by all child elements */
+		  line-height: 1.5; /* unit-less value scales in child elements based on font size */
+		  /* background-color: #F9932E;  specifies color for entire page */ 
+		  margin: 0; /*  compensates for browser differences */
+		  padding: 0; /* compensates for browser differences */
+  		}
+  		#wrapper {
+		  /* background-color: #FBD260;*/
+		  width: 98%; /* percentage of viewport */
+		  margin: 0 auto;
+		  max-width: 200em;
+		  overflow: hidden;
+		  position: relative;
+  			}
+  		#header {
+		  height: 5em; /* creates visible box in browser */
+		  background-color: lightblue; /* sets color of the div */
+		  text-align: center;
+		  padding: 0 2.08333%; /* 20 / 960 = .0208333 */
+
+		  }
+		#nav {
+		  text-transform: uppercase;
+		  font-weight: bold;
+		 	background-color: #B40605; /* sets color of the div */
+		  text-align: right;
+		  }
+		#main {
+		  float: right;
+		  width: 83.5%; /* required to float; 600 / 960 = .625 */
+		  background-color: #FFFFFF; /* sets color of the div */
+		  padding: 0 2.08333%; /* 20 / 960 = .0208333 */
+		  margin-top: 0px;
+		  }
+		#sidebar {
+			float: left;
+			width: 15.16666%; /* required to float; 280 / 960 = .2916666 */
+			/* background-color: #FBD260;  sets color of the div */
+			/*background-color: #FFCC00;*/
+			padding: 0 2.08333%; /* 20 / 960 = .0208333 */
+			margin-top: 2px;
+			height: 90%;
+			position: absolute;
+/* right: 0;*/
+		  }
+		#footer {
+		  font-size: 2em;
+		  /*font-weight: bold;*/
+		  /* color: #FFBF41;*/
+		  background-color: lightblue; /* sets color of the div */
+		  clear: both; /* removes float; no elements allowed on either side */
+		  padding: 0 2.08333%; /* 20 / 960 = .0208333 */
+		  text-align: center;
+		  margin-top: 2px;
+		  }
+		  .btn-xs{
+		  	background-color: lightblue;
+			color:black!important;
+
+			}
+	</style>
+
+</head>
+<body>
+<div id="wrapper"> <!-- Start #wrapper div -->  
+	[% INCLUDE 'layouts/_header.tt' %]
+	[% content %]
+	[% INCLUDE 'layouts/_footer.tt' %]
+</div> <!-- End #wrapper div -->
+<script src="[% request.uri_base %]/javascripts/jquery-3.2.0.min.js"></script>
+<script src="[% request.uri_base %]/bootstrap40/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+//http://jsfiddle.net/eoumLLvk/embedded/
+	$('#sidebar > a').on('click', function (e) {
+		e.preventDefault();
+		if(!$(this).hasClass("active")){
+			var lastActive = $(this).closest("#sidebar").children(".active");
+			lastActive.removeClass("active");
+			lastActive.next('div').collapse('hide');
+			$(this).addClass("active");
+			$(this).next('div').collapse('show');
+
+		}
+
+	});
+</script>
+
+</body>
+</html>

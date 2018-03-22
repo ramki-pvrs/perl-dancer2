@@ -1,0 +1,5 @@
+<div id="header"><h1 style="display: inline;" >Test Management System </h1></div>
+<ul class="nav navbar-nav navbar-left">
+<li><a href="/">Home</a></li>
+<li><a href="/custom_logout" rel="nofollow">Log out</a></li>
+</ul>

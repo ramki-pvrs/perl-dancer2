@@ -1,0 +1,882 @@
+
+[LOGDATE::28/Feb/2017 20:39:43--LOGLEVEL::core--MESSAGE::looking for post /newuser--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::28/Feb/2017 20:39:43--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::28/Feb/2017 20:39:43--LOGLEVEL::debug--MESSAGE::{'email' => 'aaaa@y.com','firstname' => 'aaaa','lastname' => 'oo','mobilenumber' => '2121212121','password' => 'aaaa1234','username' => 'aaaa'}--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::28/Feb/2017 20:39:43--LOGLEVEL::debug--MESSAGE::{'Hash::MultiValue=HASH(0x6b63408)' => undef}--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::28/Feb/2017 20:39:43--LOGLEVEL::debug--MESSAGE::{'email' => 'aaaa@y.com','firstname' => 'aaaa','lastname' => 'oo','mobilenumber' => '2121212121','password' => 'aaaa1234','username' => 'aaaa'}--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::28/Feb/2017 20:39:43--LOGLEVEL::debug--MESSAGE::{'Hash::MultiValue=HASH(0x6b63408)' => undef}--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::28/Feb/2017 20:39:43--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::core--MESSAGE::looking for post /newuser--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::debug--MESSAGE::{'email' => 'aaaa@y.com','firstname' => 'aaaa','lastname' => 'oo','mobilenumber' => '2121212121','password' => 'aaaa1234','username' => 'aaaa'}--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::debug--MESSAGE::{'Hash::MultiValue=HASH(0x6c901c8)' => undef}--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::core--MESSAGE::Entering hook core.app.route_exception--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::error--MESSAGE::Route exception: DBI Exception: DBD::mysql::st execute failed: Duplicate entry 'aaaa' for key 'uniq_user' [for Statement "INSERT INTO users ( email, firstname, lastname, mobilenumber, password, username) VALUES ( ?, ?, ?, ?, ?, ? )" with ParamValues: 0='aaaa@y.com', 1='aaaa', 2='oo', 3='2121212121', 4='{CRYPT}$2a$10$7j7Ih6DLlsXjoM1KqSZRSuW29wPwnqm.tf5VymdU35naVfpxV/hLq', 5='aaaa'] at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Schema.pm line 1118.
+	DBIx::Class::Schema::throw_exception(UsersSchema=HASH(0x6d0ea28), "DBI Exception: DBD::mysql::st execute failed: Duplicate entry"...) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage.pm line 113
+	DBIx::Class::Storage::throw_exception(DBIx::Class::Storage::DBI::mysql=HASH(0x7306318), "DBI Exception: DBD::mysql::st execute failed: Duplicate entry"...) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/DBI.pm line 1501
+	DBIx::Class::Storage::DBI::__ANON__("DBD::mysql::st execute failed: Duplicate entry 'aaaa' for key"..., DBI::st=HASH(0x79e1708), undef) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/DBI.pm line 1836
+	DBIx::Class::Storage::DBI::_dbh_execute(DBIx::Class::Storage::DBI::mysql=HASH(0x7306318), DBI::db=HASH(0x787d0b8), "INSERT INTO users ( email, firstname, lastname, mobilenumber,"..., ARRAY(0x7905c28), ARRAY(0x750b8c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/DBI.pm line 856
+	DBIx::Class::Storage::DBI::__ANON__() called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/BlockRunner.pm line 130
+	DBIx::Class::Storage::BlockRunner::try {...} () called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Try/Tiny.pm line 99
+	eval {...} called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Try/Tiny.pm line 94
+	Try::Tiny::try(CODE(0x79d3f10), Try::Tiny::Catch=REF(0x7884190)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/BlockRunner.pm line 134
+	DBIx::Class::Storage::BlockRunner::__ANON__() called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Context/Preserve.pm line 32
+	Context::Preserve::preserve_context(CODE(0x7906390), "replace", CODE(0x79063a8)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/BlockRunner.pm line 213
+	DBIx::Class::Storage::BlockRunner::_run(DBIx::Class::Storage::BlockRunner=HASH(0x733d248), CODE(0x79d39b8)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/BlockRunner.pm line 105
+	DBIx::Class::Storage::BlockRunner::run(DBIx::Class::Storage::BlockRunner=HASH(0x733d248), CODE(0x79d39b8)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/DBI.pm line 857
+	DBIx::Class::Storage::DBI::dbh_do(undef, undef, "INSERT INTO users ( email, firstname, lastname, mobilenumber,"..., ARRAY(0x7905c28), ARRAY(0x750b8c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/DBI.pm line 1817
+	DBIx::Class::Storage::DBI::_execute(DBIx::Class::Storage::DBI::mysql=HASH(0x7306318), "insert", DBIx::Class::ResultSource::Table=HASH(0x7307910), HASH(0x7670308), undef) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Storage/DBI.pm line 1976
+	DBIx::Class::Storage::DBI::insert(DBIx::Class::Storage::DBI::mysql=HASH(0x7306318), DBIx::Class::ResultSource::Table=HASH(0x7307910), HASH(0x7648810)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/Row.pm line 408
+	DBIx::Class::Row::insert(UsersSchema::Result::User=HASH(0x68f2478)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/DBIx/Class/ResultSet.pm line 2891
+	DBIx::Class::ResultSet::create(DBIx::Class::ResultSet=HASH(0x75dc7f8), HASH(0x68089d0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/RESTUMS.pm line 44
+	UMS::RESTUMS::__ANON__(Dancer2::Core::App=HASH(0x6a36640)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/Route.pm line 140
+	Dancer2::Core::Route::execute(Dancer2::Core::Route=HASH(0x6c484c0), Dancer2::Core::App=HASH(0x6a36640)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 1573
+	Dancer2::Core::App::__ANON__() called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 35
+	Dancer2::Core::App::__ANON__(CODE(0x6c8fa90)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 1573
+	eval {...} called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 1575
+	Dancer2::Core::App::_dispatch_route(Dancer2::Core::App=HASH(0x6a36640), Dancer2::Core::Route=HASH(0x6c484c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 1454
+	Dancer2::Core::App::__ANON__(CODE(0x6d08200)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Return/MultiLevel.pm line 36
+	Return::MultiLevel::with_return(CODE(0x6c8f9b8)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 1455
+	Dancer2::Core::App::dispatch(Dancer2::Core::App=HASH(0x6a36640), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 1368
+	Dancer2::Core::App::__ANON__() called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 35
+	Dancer2::Core::App::__ANON__(CODE(0x6a9c878)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 1368
+	eval {...} called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm line 1370
+	Dancer2::Core::App::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Middleware/FixMissingBodyInRedirect.pm line 50
+	Plack::Middleware::FixMissingBodyInRedirect::call(Plack::Middleware::FixMissingBodyInRedirect=HASH(0x6c2d4c8), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Component.pm line 50
+	Plack::Component::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Middleware/Conditional.pm line 16
+	Plack::Middleware::Conditional::call(Plack::Middleware::Conditional=HASH(0x6c2d8a0), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Component.pm line 50
+	Plack::Component::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Middleware/Head.pm line 10
+	Plack::Middleware::Head::call(Plack::Middleware::Head=HASH(0x6c2d798), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Component.pm line 50
+	Plack::Component::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/App/URLMap.pm line 71
+	Plack::App::URLMap::call(Plack::App::URLMap=HASH(0x6bcdfe0), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Component.pm line 50
+	Plack::Component::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Middleware/Lint.pm line 24
+	Plack::Middleware::Lint::call(Plack::Middleware::Lint=HASH(0x10514e0), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Component.pm line 50
+	Plack::Component::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Middleware/StackTrace.pm line 38
+	Plack::Middleware::StackTrace::try {...} () called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Try/Tiny.pm line 101
+	eval {...} called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Try/Tiny.pm line 94
+	Try::Tiny::try(CODE(0x6c67a18), Try::Tiny::Catch=REF(0x6c67760)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Middleware/StackTrace.pm line 42
+	Plack::Middleware::StackTrace::call(Plack::Middleware::StackTrace=HASH(0x10894f8), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Component.pm line 50
+	Plack::Component::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Middleware/AccessLog.pm line 27
+	Plack::Middleware::AccessLog::call(Plack::Middleware::AccessLog=HASH(0x6c63470), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Component.pm line 50
+	Plack::Component::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Middleware/ContentLength.pm line 10
+	Plack::Middleware::ContentLength::call(Plack::Middleware::ContentLength=HASH(0x6c676d0), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Component.pm line 50
+	Plack::Component::__ANON__(HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Util.pm line 145
+	eval {...} called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Util.pm line 145
+	Plack::Util::run_app(CODE(0x6c675e0), HASH(0x52698c0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/HTTP/Server/PSGI.pm line 170
+	HTTP::Server::PSGI::handle_connection(HTTP::Server::PSGI=HASH(0x6c2dfc0), HASH(0x52698c0), IO::Socket::INET=GLOB(0x6b93c80), CODE(0x6c675e0)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/HTTP/Server/PSGI.pm line 129
+	HTTP::Server::PSGI::accept_loop(HTTP::Server::PSGI=HASH(0x6c2dfc0), CODE(0x1089210)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/HTTP/Server/PSGI.pm line 55
+	HTTP::Server::PSGI::run(HTTP::Server::PSGI=HASH(0x6c2dfc0), CODE(0x1089210)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Handler/HTTP/Server/PSGI.pm line 14
+	Plack::Handler::HTTP::Server::PSGI::run(Plack::Handler::Standalone=HASH(0x6c67730), CODE(0x1089210)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Loader.pm line 84
+	Plack::Loader::run(Plack::Loader=HASH(0xd27ee8), Plack::Handler::Standalone=HASH(0x6c67730)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Plack/Runner.pm line 277
+	Plack::Runner::run(Plack::Runner=HASH(0xb26858)) called at /home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/bin/plackup line 7--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1454]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::core--MESSAGE::Entering hook core.error.init--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::core--MESSAGE::Entering hook core.error.before--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::28/Feb/2017 21:16:28--LOGLEVEL::core--MESSAGE::Entering hook core.error.after--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:45:57--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:45:57--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:45:57--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:01--LOGLEVEL::core--MESSAGE::looking for get /custom_logout--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:01--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:01--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:01--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:01--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:01--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:06--LOGLEVEL::core--MESSAGE::looking for get /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:06--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:06--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::01/Mar/2017 11:46:06--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::01/Mar/2017 11:46:06--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:17--LOGLEVEL::core--MESSAGE::looking for post /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:17--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:17--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::01/Mar/2017 11:46:17--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::debug--MESSAGE::Attempting to authenticate aaaa against realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::70]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::debug--MESSAGE::users accepted user aaaa--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::70]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'aaaa','logged_in_user_realm' => 'users','user_id' => 9027},'expires' => 1488435378,'id' => 'WLZnMgAAFo0HH3ZZzkaeuvqRAvCvDcaq','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::core--MESSAGE::looking for get /user/9027--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::debug--MESSAGE::Attempting to find user aaaa in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x997ce80)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::01/Mar/2017 11:46:18--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:26--LOGLEVEL::core--MESSAGE::looking for get /custom_logout--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:26--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:26--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:26--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:26--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:26--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:28--LOGLEVEL::core--MESSAGE::looking for get /newuser--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:28--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:28--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:54--LOGLEVEL::core--MESSAGE::looking for post /newuser--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 11:46:54--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 11:46:54--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 12:17:34--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 12:17:34--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 12:17:34--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 12:17:41--LOGLEVEL::core--MESSAGE::looking for get /newuser--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::01/Mar/2017 12:17:41--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::01/Mar/2017 12:17:41--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:29--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:40:29--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:29--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:33--LOGLEVEL::core--MESSAGE::looking for get /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:40:33--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:33--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:40:33--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:40:33--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::core--MESSAGE::looking for post /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::70]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::70]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => 9005},'expires' => 1491804646,'id' => 'WOnQZgAAEh7T9h6j-EthVBOli6uf44Sd','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:40:46--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:47--LOGLEVEL::core--MESSAGE::looking for get /user/9005--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:40:47--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:47--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::09/Apr/2017 11:40:47--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x7fba8e8)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:40:47--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:54--LOGLEVEL::core--MESSAGE::looking for get /user/9005/edit--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:40:54--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:40:54--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::09/Apr/2017 11:40:54--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x7bcc498)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:40:55--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:05--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:55:05--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:05--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:07--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:55:07--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:07--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:12--LOGLEVEL::core--MESSAGE::looking for get /custom_logout--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:55:12--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:12--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:12--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:55:12--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:12--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:14--LOGLEVEL::core--MESSAGE::looking for get /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:55:14--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:14--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:55:14--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:55:14--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:22--LOGLEVEL::core--MESSAGE::looking for post /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:55:22--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:22--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:55:22--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:55:22--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:22--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::70]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::70]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => 9005},'expires' => 1491805523,'id' => 'WOnT0wAAErDZcrpsbYtA_oh9WMRsFt-U','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::core--MESSAGE::looking for get /user/9005--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x7d77000)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:55:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:26--LOGLEVEL::core--MESSAGE::looking for get /user/9005/edit--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:55:26--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:55:26--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::09/Apr/2017 11:55:26--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x79e4480)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:55:26--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:19--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:19--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:19--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:20--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:20--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:20--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:23--LOGLEVEL::core--MESSAGE::looking for get /custom_logout--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:23--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:24--LOGLEVEL::core--MESSAGE::looking for get /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:24--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:24--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:58:24--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:58:24--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:32--LOGLEVEL::core--MESSAGE::looking for post /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:32--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:32--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:58:32--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::70]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::70]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => 9005},'expires' => 1491805713,'id' => 'WOnUkQAAEvQB4M8NIXl1p3w7HYqjGPCj','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::core--MESSAGE::looking for get /user/9005--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x7bd9198)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:58:33--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:38--LOGLEVEL::core--MESSAGE::looking for get /user/9005/edit--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:38--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:38--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::09/Apr/2017 11:58:38--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x782d040)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:58:38--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:48--LOGLEVEL::core--MESSAGE::looking for post /user/9005--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::09/Apr/2017 11:58:48--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::09/Apr/2017 11:58:48--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::09/Apr/2017 11:58:48--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x8657328)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::09/Apr/2017 11:58:48--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:58:56--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 10:58:56--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:58:57--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:58:59--LOGLEVEL::core--MESSAGE::looking for get /newuser--FILENAME::/usr/local/share/perl/5.22.1/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::18/Mar/2018 10:58:59--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::18/Mar/2018 10:58:59--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 08:59:22--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 08:59:22--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 08:59:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 08:59:24--LOGLEVEL::core--MESSAGE::looking for get /newuser--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 08:59:24--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 08:59:26--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 08:59:30--LOGLEVEL::core--MESSAGE::looking for get /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 08:59:30--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 08:59:30--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 08:59:30--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 08:59:30--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:16--LOGLEVEL::core--MESSAGE::looking for post /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:00:16--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:16--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:00:16--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:00:16--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:16--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::71]
+
+
+[LOGDATE::22/Mar/2018 09:00:17--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:17--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:17--LOGLEVEL::core--MESSAGE::looking for get /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:00:17--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:17--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:00:17--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:00:17--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::core--MESSAGE::looking for post /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::71]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::core--MESSAGE::looking for get /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:00:27--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::core--MESSAGE::looking for post /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::71]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::71]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => 9005},'expires' => 1521775868,'id' => 'WrMjfAAAepKHhYfpZ6HC7mAYeLw4N4d8','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::core--MESSAGE::looking for get /user/9005--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x7d55f68)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:08--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:13--LOGLEVEL::core--MESSAGE::looking for get /custom_logout--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:01:13--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:13--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:13--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:01:13--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:13--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:14--LOGLEVEL::core--MESSAGE::looking for get /newuser--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:01:14--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:14--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:16--LOGLEVEL::core--MESSAGE::looking for get /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:01:16--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:16--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:16--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:16--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::core--MESSAGE::looking for post /custom_login--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::debug--MESSAGE::print return_url using param keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::debug--MESSAGE::print return_url using query_parameters keyword --FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.before_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::debug--MESSAGE::Attempting to authenticate eeee against realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::71]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::debug--MESSAGE::users accepted user eeee--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/bin/../lib/UMS.pm--LINENUMBER::71]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::core--MESSAGE::Entering hook plugin.auth_extensible.after_authenticate_user--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::debug--MESSAGE::bless( {'data' => {'logged_in' => 1,'logged_in_user' => 'eeee','logged_in_user_realm' => 'users','user_id' => 9005},'expires' => 1521775882,'id' => 'WrMjigAAepI6v9pk4wpDNbipp6oo-3d4','is_dirty' => 1}, 'Dancer2::Core::Session' )--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::core--MESSAGE::looking for get /user/9005--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x97b9020)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:01:22--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:05:18--LOGLEVEL::core--MESSAGE::looking for get /--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:05:18--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:05:18--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:05:23--LOGLEVEL::core--MESSAGE::looking for get /user/9005--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:05:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:05:23--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::22/Mar/2018 09:05:23--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x97b6128)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:05:23--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:05:25--LOGLEVEL::core--MESSAGE::looking for get /user/9005/edit--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:05:25--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:05:25--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::22/Mar/2018 09:05:25--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x97b5978)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:05:25--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:05:33--LOGLEVEL::core--MESSAGE::looking for get /user/9005--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::35]
+
+
+[LOGDATE::22/Mar/2018 09:05:33--LOGLEVEL::core--MESSAGE::Entering hook core.app.before_request--FILENAME::(eval 100)--LINENUMBER::1]
+
+
+[LOGDATE::22/Mar/2018 09:05:33--LOGLEVEL::debug--MESSAGE::Attempting to find user eeee in realm users--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Plugin/Auth/Extensible.pm--LINENUMBER::708]
+
+
+[LOGDATE::22/Mar/2018 09:05:33--LOGLEVEL::debug--MESSAGE::708 inside Extensible.pm, logged_in_user = HASH(0x94e0a40)--FILENAME::/home/opensips/perl_tut/dancer2/UserMgmt/UMS/local/lib/perl5/Dancer2/Core/App.pm--LINENUMBER::1573]
+
+
+[LOGDATE::22/Mar/2018 09:05:33--LOGLEVEL::core--MESSAGE::Entering hook core.app.after_request--FILENAME::(eval 100)--LINENUMBER::1]
+

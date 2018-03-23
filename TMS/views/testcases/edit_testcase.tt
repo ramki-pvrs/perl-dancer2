@@ -14,7 +14,7 @@
       [% f = form.field('feat_id') %]
       <div class="form-group form-inline">
         <label for="[% f.id | html %]">Feature ID</label>
-        <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Feature id" value="[% f.fif | html %]">
+        <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Feature id" value="[% f.fif | html %]" readonly="readonly">
       </div>
 
       

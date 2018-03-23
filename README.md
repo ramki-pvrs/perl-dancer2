@@ -33,6 +33,8 @@ What is this not?
 Project Development Environment:
 - ubuntu 16.04 LTS
 - MySQL, Redis Server, Carton (package manager) - these are installed in ubuntu (i.e. not local to this dancer2 project) 
+	- MySQL user id root and password should be set to root123
+	- required for the apps; not secured 
  - ref:http://advent.perldancer.org/2014/4
 - html, CSS, bootstrap, jQuery, 
 - Firefox as browser

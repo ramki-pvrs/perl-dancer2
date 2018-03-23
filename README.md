@@ -41,15 +41,15 @@ Project Development Environment:
 
 How to use?
 -in ubuntu install (typical installation procedure followed; for any error, refer respective documentation or google)
-    sudo apt-get update
-	sudo apt-get install git-all
-	sudo apt-get install mysql-workbench
-	sudo apt-get install libmysqlclient-dev
-	sudo apt-get install carton
-	sudo apt install redis-server
+    - sudo apt-get update
+	- sudo apt-get install git-all
+	- sudo apt-get install mysql-workbench
+	- sudo apt-get install libmysqlclient-dev
+	- sudo apt-get install carton
+	- sudo apt install redis-server
 		- after install, at prompt, if you enter redis-cli ping, you should get PONG as response
-	sudo perl -MCPAN -e 'install DBIx::Class::Schema::Loader' (takes a long time to install)
-	sudo perl -MCPAN -e 'install DBIx::Class::PassphraseColumn' (takes a long time to install)
+	- sudo perl -MCPAN -e 'install DBIx::Class::Schema::Loader' (takes a long time to install)
+	- sudo perl -MCPAN -e 'install DBIx::Class::PassphraseColumn' (takes a long time to install)
 - makesure for your username mysql is set with grant all privileges like
 	- ubuntu prompt$mysql -uroot -p (if you have not configured any password just press enter)
 	- mysql>CREATE USER 'your_username'@'localhost' IDENTIFIED BY 'your_password';

@@ -5,6 +5,7 @@ package EditTestCaseForm;
 use HTML::FormHandler::Moose;
 extends 'HTML::FormHandler::Model::DBIC';
 use Dancer2::Plugin::DBIC;
+use DBIx::Class::ResultSetColumn;
 use HTML::FormHandler::Field::Select;
 use Data::Dumper;
 # http://search.cpan.org/dist/Moose/lib/Moose/Manual/BestPractices.pod
@@ -20,16 +21,38 @@ has '+html_prefix' => (default => 1);
 
 #has_field 'prod_rls_id'  => (type => 'Select', required => 1, noupdate => 1 );
 #has_field 'id'  => (type => 'Integer', required => 1, noupdate => 1);
-has_field 'feat_id'  => (type => 'Integer', required => 1,noupdate => 1);
-#has_field 'featurename'  => (type => 'Select', required => 1);
+#has_field 'feat_id'  => (type => 'Integer', required => 1,noupdate => 1);
+has_field 'authorname'  => (type => 'Text', required => 1,noupdate => 1);
+has_field 'featurename'  => (type => 'Text', required => 1,noupdate => 1);
 has_field 'title'  => (type => 'Text', required => 1, maxlength => 255);
 has_field 'description'  => (type => 'Text', required => 1, maxlength => 255);
 has_field 'setup'  => (type => 'Text', required => 1, maxlength => 255);
 has_field 'exec_steps' => (type => 'Text', required => 1, maxlength => 255);
 has_field 'expected_result'  => (type => 'Text', required => 1, maxlength => 255);
 has_field 'automate' => (type => 'Integer', required => 1);
-has_field 'author_id' => (type => 'Integer', required => 1);
+#has_field 'author_id' => (type => 'Integer', required => 1);
 has_field 'script_path'  => (type => 'Text', required => 1, maxlength => 255);
+
+
+=begin
+sub default_featurename {
+  my $self = shift;
+  
+  return unless $self->schema;
+  #don't know why? search is not working here only find
+  my $thisFeatureName = $self->schema->resultset('Feature')->find({'testcases.feat_id' => 8},{join =>'testcases'});
+  return $thisFeatureName->get_column('fname');
+
+  #working lines below
+  #my $thisFeatureName = $self->schema->resultset('Feature')->find({'testcases.feat_id' => 8},{join =>'testcases'});
+  #return $thisFeatureName->get_column('fname'); #returns fname IPV6Support which is id = 8
+  #my $thisFeatureName = $self->schema->resultset('Feature')->find({id => 6});
+  #return $thisFeatureName->get_column('fname');
+  #my @rs = $self->schema->resultset('Feature')->search({ 'me.id' => '6'})->all;
+  #print Dumper @rs;
+      
+}
+=cut
 
 =begin
 sub options_featurename {

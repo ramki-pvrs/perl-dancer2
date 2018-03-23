@@ -156,11 +156,23 @@ get '/select_testcase/:action' => sub {
 };
 
 post '/update_testcase' => sub {
-    my $testcase = schema('testcases')->resultset('Testcase')->find({id => body_parameters->get('enterTCID')})
+    my $enteredTCID = body_parameters->get('enterTCID');
+    my $testcase = schema('testcases')->resultset('Testcase')->find({id => $enteredTCID})
         or return send_error('Not Found', 404);
 
     my $form = EditTestCaseForm->new;
     $form->process(item => $testcase, params => { params });
+
+    #because feature name and author name can not be changed, they are set as read only in EditTestCaseForm.pm
+    #because they are related values for testcases table, they are set after form is processed for other field values
+    my $thisFeatureID = $testcase->get_column('feat_id');
+    my $thisAuthorID = $testcase->get_column('author_id');
+    #me is a keyword for the table in resultset
+    my $thisFeatureRow = schema('testcases')->resultset('Feature')->find({'me.id' => $thisFeatureID});
+    #my $thisFeatureRow = schema('testcases')->resultset('Feature')->find({'testcases.feat_id' => $thisFeatureID},{join =>'testcases'});
+    my $thisAuthorRow = schema('users')->resultset('User')->find({'me.id' => $thisAuthorID});
+    $form->field('featurename')->value($thisFeatureRow->get_column('fname'));
+    $form->field('authorname')->value($thisAuthorRow->get_column('lastname').", ".$thisAuthorRow->get_column('firstname'));
 
     template 'testcases/edit_testcase' => { form => $form };
 };
@@ -171,6 +183,7 @@ post '/commit_updates/:id' => sub {
         or return send_error('Not Found', 404);
 
     #print Dumper $testcase;
+    #print Dumper $testcase->get_column('id');
 
     my $form = EditTestCaseForm->new;
     $form->process(item => $testcase, params => { params });

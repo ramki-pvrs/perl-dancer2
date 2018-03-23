@@ -1,6 +1,7 @@
 package UMS;
 
 BEGIN {
+	#change the path to your path
 	$ENV{DBIC_TRACE} =  "1=/home/opensips/perl_tut/dancer2/UserMgmt/UMS/logs/DBIC_TRACE.log";
 }
 

@@ -1,6 +1,7 @@
 package UMS::RESTUMS;
 
 BEGIN {
+	#change to your path
 	$ENV{DBIC_TRACE} =  "1=/home/opensips/perl_tut/dancer2/UserMgmt/UMS/logs/DBIC_TRACE.log";
 }
 

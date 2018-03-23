@@ -1,5 +1,6 @@
 package TMS;
 BEGIN {
+    #change to your path
     $ENV{DBIC_TRACE} =  "1=/home/opensips/perl_tut/dancer2/TMS/logs/DBIC_TRACE.log";
 }
 use Dancer2;

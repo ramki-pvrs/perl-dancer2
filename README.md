@@ -28,6 +28,8 @@ What is this not?
 - neither a comprehensive application covering all user and test management workflows nor covering all features of dancer2
 - only the following features are tested
 	- Create New Test Case in Add/Create menu
+	- Edit Test Case in Edit/Update menu
+	- Delete a Test Case in Delete/Remove menu
 - menus are just shown from GUI - not tested fully
 
 Project Development Environment:

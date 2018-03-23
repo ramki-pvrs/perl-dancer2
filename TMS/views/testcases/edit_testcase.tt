@@ -6,21 +6,21 @@
     <form action="/commit_updates/[% form.item.id %]" method="post">
       [% INCLUDE 'shared/_error_messages.tt' %]
       
-      <div class="form-group">
-        <label class="sr-only" for="TCID">TC ID</label>
+      <div class="form-group form-inline">
+        <label for="TCID">TC ID</label>
         <input type="text" class="form-control" id="TCID" name="TCID" value="[% form.item.id %]" readonly="readonly">
       </div>
 
       [% f = form.field('feat_id') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Feature ID</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Feature ID</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Feature id" value="[% f.fif | html %]">
       </div>
 
       
       <!--[% f = form.field('featurename') %]
-      <div class="form-group">
-           <label class="sr-only" for="[% f.id | html %]">Feature Name</label>
+      <div class="form-group form-inline">
+           <label for="[% f.id | html %]">Feature Name</label>
            <select id="[% f.id | html %]" name="[% f.html_name | html %]">
            <option value="">Select Feature</option>
              [% FOR option IN f.options %]
@@ -32,50 +32,50 @@
       </div> -->
 
       [% f = form.field('title') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Title</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Title</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Title" value="[% f.fif | html %]">
       </div>
 
        [% f = form.field('description') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Description</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Description</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Tc description" value="[% f.fif | html %]">
       </div>
 
       [% f = form.field('setup') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Setup</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Setup</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Tc setup details" value="[% f.fif | html %]">
       </div>
 
       [% f = form.field('exec_steps') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Execution steps</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Execution steps</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Enter execution steps" value="[% f.fif | html %]">
       </div>
       
       [% f = form.field('expected_result') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Expected result</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Expected result</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Enter expected result" value="[% f.fif | html %]">
       </div>
 
       [% f = form.field('automate') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Automate</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Automate</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="If Tc is automated" value="[% f.fif | html %]">
       </div>
 
       [% f = form.field('script_path') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Script path</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Script path</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Enter script path" value="[% f.fif | html %]">
       </div>
 
       [% f = form.field('author_id') %]
-      <div class="form-group">
-        <label class="sr-only" for="[% f.id | html %]">Author ID</label>
+      <div class="form-group form-inline">
+        <label for="[% f.id | html %]">Author ID</label>
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Enter Author ID" value="[% f.fif | html %]">
       </div>
     

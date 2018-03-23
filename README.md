@@ -41,7 +41,7 @@ Project Development Environment:
 
 How to use?
 -in ubuntu install (typical installation procedure followed; for any error, refer respective documentation or google)
-    - sudo apt-get update
+	- sudo apt-get update
 	- sudo apt-get install git-all
 	- sudo apt-get install mysql-workbench
 	- sudo apt-get install libmysqlclient-dev

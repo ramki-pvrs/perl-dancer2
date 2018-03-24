@@ -25,8 +25,9 @@ has_field 'setup'  => (type => 'Text', required => 1, maxlength => 255);
 has_field 'exec_steps' => (type => 'Text', required => 1, maxlength => 255);
 has_field 'expected_result'  => (type => 'Text', required => 1, maxlength => 255);
 has_field 'automate' => (type => 'Integer', required => 1);
-has_field 'author_id' => (type => 'Integer', required => 1);
+has_field 'author_id' => (type => 'Integer',required => 1);
 has_field 'script_path'  => (type => 'Text', required => 1, maxlength => 255);
+
 
 =begin
 sub options_featurename {

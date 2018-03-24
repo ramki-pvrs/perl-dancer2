@@ -75,11 +75,15 @@
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Enter script path" value="some path">
       </div>
 
+      <!-- auth_id field is hidden and set automatically by session('logged_in_user') in TMS.pm -->
       [% f = form.field('author_id') %]
       <div class="form-group form-inline">
-        <label for="[% f.id | html %]">Author ID</label>
-        <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Enter Author ID" value="9005">
+           <!-- <label for="[% f.id | html %]">Author ID</label> -->
+           <input type="hidden" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" value="[% f.fif | html %]">
       </div>
+
+
+
     
 
       <button type="submit" class="btn btn-primary btn-lg" name="commit">Submit TC</button>

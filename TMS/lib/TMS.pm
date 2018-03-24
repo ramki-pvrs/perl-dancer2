@@ -76,12 +76,19 @@ any ['get', 'post'] => '/newtestcase' =>  sub {
 # 	# #app->log("debug", $user);
  	my $form = NewTestCaseForm->new;
 	$form->process(item => $testcase, params => {params});
+
+    my $thisAuthorRow = schema('users')->resultset('User')->find({'me.username' => session('logged_in_user')});
+    #print Dumper $thisAuthorRow->get_column('id');
+    $form->field('author_id')->value($thisAuthorRow->get_column('id'));
+
 # 	# #app->log("debug", $user);
 # 	# #app->log("debug", {params});
 # 	# #app->log("debug", params);
 # 	# #app->log("debug", "afer form process line");
 # 	# #app->log("debug", param);
     #app->log("debug", body_parameters);
+
+   #print Dumper session('logged_in_user');
 
  	if (request->method() eq "GET") {
  		template 'testcases/newtestcase' => { form => $form };

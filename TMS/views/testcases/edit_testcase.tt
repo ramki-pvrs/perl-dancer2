@@ -17,15 +17,27 @@
         <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" placeholder="Feature id" value="[% f.fif | html %]" readonly="readonly">
       </div> -->
 
-       [% f = form.field('authorname') %]
+      [% f = form.field('productname') %]
       <div class="form-group form-inline">
-           <label for="[% f.id | html %]">Author Name</label>
+           <label for="[% f.id | html %]">Product</label>
+           <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" value="[% f.fif | html %]" readonly="readonly">
+      </div> 
+
+      [% f = form.field('releasenumber') %]
+      <div class="form-group form-inline">
+           <label for="[% f.id | html %]">Release</label>
            <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" value="[% f.fif | html %]" readonly="readonly">
       </div> 
 
       [% f = form.field('featurename') %]
       <div class="form-group form-inline">
-           <label for="[% f.id | html %]">Feature Name</label>
+           <label for="[% f.id | html %]">Feature</label>
+           <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" value="[% f.fif | html %]" readonly="readonly">
+      </div> 
+
+       [% f = form.field('authorname') %]
+      <div class="form-group form-inline">
+           <label for="[% f.id | html %]">Author Name</label>
            <input type="text" class="form-control" id="[% f.id | html %]" name="[% f.html_name | html %]" value="[% f.fif | html %]" readonly="readonly">
       </div> 
 

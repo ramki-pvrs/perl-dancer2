@@ -178,6 +178,14 @@ post '/update_testcase' => sub {
     my $thisFeatureRow = schema('testcases')->resultset('Feature')->find({'me.id' => $thisFeatureID});
     #my $thisFeatureRow = schema('testcases')->resultset('Feature')->find({'testcases.feat_id' => $thisFeatureID},{join =>'testcases'});
     my $thisAuthorRow = schema('users')->resultset('User')->find({'me.id' => $thisAuthorID});
+
+    my $thisProdRlsID = $thisFeatureRow->get_column('prod_rls_id');
+    my $thisProductRlsRow = schema('testcases')->resultset('ProductRl')->find({'me.id' => $thisProdRlsID});
+    my $thisProdID = $thisProductRlsRow->get_column('prod_id');
+    my $thisProductRow = schema('testcases')->resultset('Product')->find({'me.id' => $thisProdID});
+
+    $form->field('productname')->value($thisProductRow->get_column('pname'));
+    $form->field('releasenumber')->value($thisProductRlsRow->get_column('rls_num'));
     $form->field('featurename')->value($thisFeatureRow->get_column('fname'));
     $form->field('authorname')->value($thisAuthorRow->get_column('lastname').", ".$thisAuthorRow->get_column('firstname'));
 

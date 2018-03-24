@@ -188,6 +188,11 @@ post '/update_testcase' => sub {
     $form->field('releasenumber')->value($thisProductRlsRow->get_column('rls_num'));
     $form->field('featurename')->value($thisFeatureRow->get_column('fname'));
     $form->field('authorname')->value($thisAuthorRow->get_column('lastname').", ".$thisAuthorRow->get_column('firstname'));
+    #here value is set by label of options, so in EditTestCaseForm.pm
+    #status field labels are same as option values
+    $form->field('status')->value($testcase->get_column('status'));
+
+    #print Dumper $testcase->get_column('status');
 
     template 'testcases/edit_testcase' => { form => $form };
 };

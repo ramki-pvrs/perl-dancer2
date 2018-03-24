@@ -34,6 +34,16 @@ has_field 'expected_result'  => (type => 'Text', required => 1, maxlength => 255
 has_field 'automate' => (type => 'Integer', required => 1);
 #has_field 'author_id' => (type => 'Integer', required => 1);
 has_field 'script_path'  => (type => 'Text', required => 1, maxlength => 255);
+has_field 'status'  => (type => 'Select', required => 1);
+
+#when editing the test case, to show the current status of the test case
+#labels are set with names instead of 1,2,3
+sub options_status {
+    return (
+           Active   => 'Active',
+           Obsolete   => 'Obsolete',
+       );
+}
 
 
 =begin
